@@ -5,16 +5,30 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.scss">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
         <title>Rover Mock Site</title>
     </head>
 
     <header>
+
+        <!-- This container is responsible for creating the hamburger drop down menu -->
+        <div class="container">
+            <div class="hamburger-icon">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </div>
+
         <nav class="nav">
+            <div class="logo">
+                <img src="img/logo@200x200.ce2f57dbe3e4.png" alt="Rover Logo">
+            </div>
             <ul class="nav-list">
-                <div class="logo">
-                    <img src="img/logo@200x200.ce2f57dbe3e4.png" alt="Rover Logo">
-                </div>
                 <li><a href="#!">Search Sitters</a></li>
                 <li><a href="#!">Become a Sitter</a></li>
                 <li><a href="#!">Our Services</a></li>
@@ -28,11 +42,11 @@
     <body>
 
         <section class="services">
-            <div class="text-btn">
+            <div class="text-section">
                 <h2>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</h2>
             </div>
-            <div class="top-btn">
-                <button class="btn">Discover local sitters</button>
+            <div class="discover">
+                <button class="discover-btn">Discover local sitters</button>
             </div>
 
             <div>

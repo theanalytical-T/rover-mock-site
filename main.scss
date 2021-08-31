@@ -101,5 +101,23 @@ margin: -22.75% 0;
 .animal-lovers {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    margin-top: 2.5em;
+    width:100%;
+}
+
+.lady-n-dog {
+    margin: auto 1em;
+    width: 50vw;
+    height: 50vw;
+}
+
+.guy-n-cat {
+    margin: auto 1em;
+    width: 50vw;
+    height: 50vw;
+}
+
+.info {
+    margin-top: 3.5em;
 }

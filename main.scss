@@ -121,3 +121,20 @@ margin: -22.75% 0;
 .info {
     margin-top: 3.5em;
 }
+
+.info-section {
+    margin: 1em auto;
+}
+
+.info-text {
+    & > h3 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+    
+    & > p {
+        margin-top: 10px;
+        font-size: 24px;
+        color: #666;
+    }
+}

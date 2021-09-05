@@ -69,12 +69,12 @@ margin: -22.75% 0;
 
     &-btn{
         width: 92%;
-        height: 3.6em;
+        height: 3.45em;
         font-size: 22px;
-        letter-spacing: 1px;
+        letter-spacing: .5px;
         font-weight: bold;
         color: white;
-        background: #038650;
+        background: #028a51;
         border-radius: 2em;
         border: none;
         margin: 0 auto;
@@ -93,7 +93,8 @@ margin: -22.75% 0;
     margin-top: 12em;
 
     & > h2 {
-        font-size: 30px;
+        font-size: 32px;
+        letter-spacing: 1.2px;
     }
 }
 
@@ -119,17 +120,24 @@ margin: -22.75% 0;
 
 .info {
     margin-top: 3.5em;
-}
 
-.info-section {
-    margin: 1em auto;
+    &-section {
+    display: flex;
+    margin: 4em 0;
+    }
+
+    &-icon > img {
+        height: 50px;
+        width: 50px;
+        margin: 0 3.6vw;
+    }
 }
 
 .info-text {
     & > h3 {
-    font-size: 24px;
-    font-weight: 400;
-}
+        font-size: 24px;
+        font-weight: 400;
+    }
     
     & > p {
         margin-top: 10px;

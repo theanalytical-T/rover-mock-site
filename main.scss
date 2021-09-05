@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 body {
@@ -52,7 +52,6 @@ margin: -22.75% 0;
 }
 
 .text-section {
-    font-family: 'Roboto';
     font-size: 22px;
     letter-spacing: 1.5px;
 
@@ -129,12 +128,13 @@ margin: -22.75% 0;
 .info-text {
     & > h3 {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 400;
 }
     
     & > p {
         margin-top: 10px;
         font-size: 24px;
+        font-weight: 400;
         color: #666;
     }
 }

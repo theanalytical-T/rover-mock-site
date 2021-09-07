@@ -146,3 +146,42 @@ margin: -22.75% 0;
         color: #666;
     }
 }
+
+.booking {
+    margin: 3em 1.5em;
+
+    &-panel {
+        border: 2.38px solid rgb(221, 220, 220);
+        border-radius: 7px;
+        height: 8em;
+
+        &-header {
+            height: 5vh;
+        }
+
+            &-btn {
+                width: 92%;
+                height: 3.45em;
+                font-size: 22px;
+                letter-spacing: .5px;
+                font-weight: bold;
+                color: white;
+                background: #028a51;
+                border-radius: 2em;
+                border: none;
+                margin: 0 auto;
+            }
+
+            &-btn:hover {
+                background: #037948;
+                cursor: pointer;
+                transition: all ease-in 0.1s;
+            }
+    }
+
+    &-footer {
+        margin-top: 3.5vh;
+        font-size: 20px;
+        text-align: center;
+    }
+}

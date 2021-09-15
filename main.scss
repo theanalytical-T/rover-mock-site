@@ -1,4 +1,6 @@
 @import 'menu';
+$btn-color: #028a51;
+$btn-hover-color: #037948;
 
 * {
     margin: 0;
@@ -19,16 +21,29 @@ a {
     text-decoration: none;
 }
 
+#link a:link {
+    color: #157a87;
+}
+
+#link a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+#link a:visited {
+    color: black;
+}
+
 .logo {
-overflow: hidden;
-width: 170px;
-margin-left: 15px;
+    overflow: hidden;
+    width: 170px;
+    margin-left: 15px;
 }
 
 .logo img {
-display: block;
-width: 100%;
-margin: -22.75% 0;
+    display: block;
+    width: 100%;
+    margin: -22.75% 0;
 }
 
 .nav-list li {
@@ -57,8 +72,8 @@ margin: -22.75% 0;
 
     & > h2 {
         margin-top: 35px;
-       padding: 0 2rem; 
-       line-height: 1.5;
+        padding: 0 2rem; 
+        line-height: 1.5;
     }
 }
 
@@ -74,16 +89,16 @@ margin: -22.75% 0;
         letter-spacing: .5px;
         font-weight: bold;
         color: white;
-        background: #028a51;
+        background: $btn-color;
         border-radius: 2em;
         border: none;
         margin: 0 auto;
     }
 
     &-btn:hover {
-    background: #037948;
-    cursor: pointer;
-    transition: all ease-in 0.1s;
+        background: $btn-hover-color;
+        cursor: pointer;
+        transition: all ease-in 0.1s;
     }
 }
 
@@ -122,8 +137,8 @@ margin: -22.75% 0;
     margin-top: 3.5em;
 
     &-section {
-    display: flex;
-    margin: 4em 0;
+        display: flex;
+        margin: 4em 0;
     }
 
     &-icon > img {
@@ -153,30 +168,50 @@ margin: -22.75% 0;
     &-panel {
         border: 2.38px solid rgb(221, 220, 220);
         border-radius: 7px;
-        height: 8em;
+        height: 15vh;
 
-        &-header {
-            height: 5vh;
-        }
+        // &-header {
+        //     height: 5vh;
+        //     font-size: 24px;
+        // }
 
-            &-btn {
-                width: 92%;
-                height: 3.45em;
-                font-size: 22px;
-                letter-spacing: .5px;
-                font-weight: bold;
-                color: white;
-                background: #028a51;
-                border-radius: 2em;
-                border: none;
-                margin: 0 auto;
-            }
+            // &-btn {              
+            //     width: 92%;
+            //     height: 3.45em;
+            //     font-size: 22px;
+            //     letter-spacing: .5px;
+            //     font-weight: bold;
+            //     color: white;
+            //     background: #028a51;
+            //     border-radius: 2em;
+            //     border: none;
+            //     margin: 0 auto;
+            // }
 
-            &-btn:hover {
-                background: #037948;
-                cursor: pointer;
-                transition: all ease-in 0.1s;
-            }
+            // &-btn:hover {
+            //     background: #037948;
+            //     cursor: pointer;
+            //     transition: all ease-in 0.1s;
+            // }
+    }
+
+    &-btn {              
+        width: 92%;
+        height: 3.45em;
+        font-size: 22px;
+        letter-spacing: .5px;
+        font-weight: bold;
+        color: white;
+        background: $btn-color;
+        border-radius: 2em;
+        border: none;
+        margin: 0 auto;
+    }
+
+    &-btn:hover {
+        background: $btn-hover-color;
+        cursor: pointer;
+        transition: all ease-in 0.1s;
     }
 
     &-footer {
@@ -185,3 +220,4 @@ margin: -22.75% 0;
         text-align: center;
     }
 }
+

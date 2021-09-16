@@ -21,19 +21,6 @@ a {
     text-decoration: none;
 }
 
-#link a:link {
-    color: #157a87;
-}
-
-#link a:hover {
-        color: black;
-        text-decoration: underline;
-    }
-
-#link a:visited {
-    color: black;
-}
-
 .logo {
     overflow: hidden;
     width: 170px;
@@ -124,13 +111,13 @@ a {
 .lady-n-dog {
     margin: auto 1em;
     width: 50vw;
-    height: 50vw;
+    height: 30vh;
 }
 
 .guy-n-cat {
     margin: auto 1em;
     width: 50vw;
-    height: 50vw;
+    height: 30vh;
 }
 
 .info {
@@ -166,52 +153,51 @@ a {
     margin: 3em 1.5em;
 
     &-panel {
+        display: flex;
+        flex-direction: column;
         border: 2.38px solid rgb(221, 220, 220);
         border-radius: 7px;
-        height: 15vh;
+        height: 505px;
+        font-size: 24px;
 
-        // &-header {
-        //     height: 5vh;
-        //     font-size: 24px;
-        // }
+        &-header {
+            display: flex;
+            align-items: start;
+            padding: 2rem 4em 1rem;
+            background-color: #f4f5f6;
+            text-align: center;
+            border-bottom: 2.38px solid rgb(221, 220, 220);
+        }
 
-            // &-btn {              
-            //     width: 92%;
-            //     height: 3.45em;
-            //     font-size: 22px;
-            //     letter-spacing: .5px;
-            //     font-weight: bold;
-            //     color: white;
-            //     background: #028a51;
-            //     border-radius: 2em;
-            //     border: none;
-            //     margin: 0 auto;
-            // }
+        &-body {
+            margin: 1.8rem;
+            justify-content: space-between;
+        }
 
-            // &-btn:hover {
-            //     background: #037948;
-            //     cursor: pointer;
-            //     transition: all ease-in 0.1s;
-            // }
-    }
+        &-body > div {
+            display: flex;
+            margin: 1rem;
+            margin-bottom: 0;
+        }
 
-    &-btn {              
-        width: 92%;
-        height: 3.45em;
-        font-size: 22px;
-        letter-spacing: .5px;
-        font-weight: bold;
-        color: white;
-        background: $btn-color;
-        border-radius: 2em;
-        border: none;
-        margin: 0 auto;
-    }
+        &-btn {              
+            width: 92%;
+            height: 3.4em;
+            font-size: 22px;
+            letter-spacing: .5px;
+            font-weight: bold;
+            color: white;
+            background: $btn-color;
+            border-radius: 2em;
+            border: none;
+            margin: 0 auto;
+        }
 
-    &-btn:hover {
-        background: $btn-hover-color;
-        cursor: pointer;
-        transition: all ease-in 0.1s;
+        &-btn:hover {
+            background: $btn-hover-color;
+            cursor: pointer;
+            transition: all ease-in 0.1s;
+        }
     }
 
     &-footer {
@@ -221,3 +207,28 @@ a {
     }
 }
 
+.heart-shield {
+    margin: 0 10px 0 0;
+}
+
+.link {
+    color: #157a87;
+}
+
+.link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: none;
+}
+
+.checkmark {
+    width: 22px;
+    height: 22px;
+}
+
+.checkmark-icon {
+margin-right: .5rem;
+}

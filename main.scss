@@ -232,3 +232,49 @@ a {
 .checkmark-icon {
 margin-right: .5rem;
 }
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    border: 2.38px solid rgb(221, 220, 220);
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 500;
+
+    & > quote {
+        margin: 0 2rem;
+    }
+
+    & > p {
+        font-size: 22px;
+        margin: .5rem 2rem;
+    }
+}
+
+.dash {
+    margin: 2rem;
+    width: 60px;
+    height: 4px;
+    background: #04985a;
+    border: 2px solid rgb(221, 220, 220);
+}
+
+.learn {
+    font-size: 24px;
+    color: #157a87;
+    margin: 1rem 2rem;
+
+    &:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: none;
+    }
+
+}
+
+.woman-n-lab {
+    width: 100%;
+}

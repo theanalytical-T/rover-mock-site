@@ -240,6 +240,8 @@ margin-right: .5rem;
     border-radius: 7px;
     font-size: 30px;
     font-weight: 500;
+    z-index: 1;
+    width: 100%;
 
     & > quote {
         margin: 0 2rem;
@@ -277,4 +279,19 @@ margin-right: .5rem;
 
 .woman-n-lab {
     width: 100%;
+    // padding: 20px;
+}
+
+.how-to {
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    // margin: 0 auto;
+
+    &-header {
+        font-size: 1.4rem;
+        // align-items: center;
+        // justify-content: center;
+        // margin: 0 auto;
+    }
 }

@@ -279,19 +279,41 @@ margin-right: .5rem;
 
 .woman-n-lab {
     width: 100%;
-    // padding: 20px;
 }
 
 .how-to {
-    display: flex;
-    flex-direction: column;
-    // width: 100%;
-    // margin: 0 auto;
+    display: block;
+    margin: 3rem 1rem;
 
     &-header {
-        font-size: 1.4rem;
-        // align-items: center;
-        // justify-content: center;
-        // margin: 0 auto;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
+.how-to {
+    &-section {
+        display: flex;
+        margin: 1em 0;
+    }
+
+    &-icon > img {
+        height: 50px;
+        width: 50px;
+        margin: 0 3.2vw;
+    }
+}
+
+.how-to-text {
+    & > h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    & > p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #666;
     }
 }

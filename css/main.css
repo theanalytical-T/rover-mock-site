@@ -122,6 +122,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
   font-family: 'Hind Siliguri', sans-serif;
 }
 
@@ -248,13 +249,13 @@ a {
 .lady-n-dog {
   margin: auto 1em;
   width: 50vw;
-  height: 50vw;
+  height: 30vh;
 }
 
 .guy-n-cat {
   margin: auto 1em;
   width: 50vw;
-  height: 50vw;
+  height: 30vh;
 }
 
 .info {
@@ -291,18 +292,50 @@ a {
 }
 
 .booking-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 2.38px solid #dddcdc;
   border-radius: 7px;
-  height: 8em;
+  height: 505px;
+  font-size: 24px;
 }
 
 .booking-panel-header {
-  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 2rem 4em 1rem;
+  background-color: #f4f5f6;
+  text-align: center;
+  border-bottom: 2.38px solid #dddcdc;
+}
+
+.booking-panel-body {
+  margin: 1.8rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking-panel-body > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  margin-bottom: 0;
 }
 
 .booking-panel-btn {
   width: 92%;
-  height: 3.45em;
+  height: 3.4em;
   font-size: 22px;
   letter-spacing: .5px;
   font-weight: bold;
@@ -324,5 +357,150 @@ a {
   margin-top: 3.5vh;
   font-size: 20px;
   text-align: center;
+}
+
+.heart-shield {
+  margin: 0 10px 0 0;
+}
+
+.link {
+  color: #157a87;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: none;
+}
+
+.checkmark {
+  width: 22px;
+  height: 22px;
+}
+
+.checkmark-icon {
+  margin-right: .5rem;
+}
+
+.quote > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2.38px solid #dddcdc;
+  border-radius: 7px;
+  font-size: 30px;
+  font-weight: 500;
+  z-index: 1;
+  width: 100%;
+}
+
+.quote > div > quote {
+  margin: 0 2rem;
+}
+
+.quote > div > p {
+  font-size: 22px;
+  margin: .5rem 2rem;
+}
+
+.dash {
+  margin: 2rem;
+  width: 60px;
+  height: 4px;
+  background: #04985a;
+  border: 2px solid #dddcdc;
+}
+
+.learn {
+  font-size: 24px;
+  color: #157a87;
+  margin: 1rem 2rem;
+}
+
+.learn:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.learn:visited {
+  color: none;
+}
+
+.woman-n-lab {
+  width: 100%;
+}
+
+.how-to {
+  display: block;
+  margin: 3rem 1rem;
+}
+
+.how-to-header {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.how-to-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0;
+}
+
+.how-to-icon > img {
+  height: 50px;
+  width: 50px;
+  margin: 0 3.2vw;
+}
+
+.how-to-text > h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.how-to-text > p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #666;
+}
+
+.connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.connection > div {
+  text-align: center;
+}
+
+.connection > div > h2 {
+  font-size: 2.1rem;
+}
+
+.connection-app {
+  padding: 3rem 1rem;
+}
+
+.connection-available {
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.app-logo {
+  padding: .4rem;
 }
 /*# sourceMappingURL=main.css.map */

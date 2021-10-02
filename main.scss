@@ -22,6 +22,16 @@ a {
     text-decoration: none;
 }
 
+select {
+    box-shadow: 0 10px 25px rgba(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 1em 4em 1em 1.5em;
+    background-color:#4d5061;
+    color: white;
+    // appearance: none;
+    border: 0;
+}
+
 .logo {
     overflow: hidden;
     width: 170px;
@@ -106,17 +116,17 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 2.5em;
-    width:100%;
+    width: 100%;
 }
 
 .lady-n-dog {
-    margin: auto 1em;
+    // margin: 1rem auto;
     width: 50vw;
     height: 30vh;
 }
 
 .guy-n-cat {
-    margin: auto 1em;
+    // margin: 1rem auto;
     width: 50vw;
     height: 30vh;
 }
@@ -391,3 +401,61 @@ form > button {
 .f-link {
     color: #62686e;
 }
+
+.other-info {
+    display: flex;
+}
+
+.rover-info {
+    & > ul {
+    font-size: 1.3rem;
+}
+}
+
+    & > h2 {
+    font-size: 1.5rem;
+}
+
+.states {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: #3b3c47;
+    height: 100%;
+    width: 4rem;
+    pointer-events: none;
+
+    &::before, &::after {
+        --size: .5em;
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before {
+        border-left: var(--size) solid transparent;
+        border-right: var(--size) solid transparent;
+        border-bottom: var(--size) solid rgba(255, 255, 255, 0.5);
+        top: 40%;
+    }
+
+        &::after {
+        border-left: var(--size) solid transparent;
+        border-right: var(--size) solid transparent;
+        border-top: var(--size) solid rgba(255, 255, 255, 0.5);
+        top: 60%;
+    }
+}
+
+// #dropdown {
+
+// }
